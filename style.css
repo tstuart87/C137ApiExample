@@ -1,0 +1,73 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(27, 26, 26);
+    text-align: center;
+    color: rgb(54, 50, 50);
+}
+
+#logo{
+    height: 40px;
+}
+
+.card {
+    background-color: #BEB8B8;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 180%;
+    border: 18px solid #646060;
+    border-radius: 50px 50px 50px 0;
+}
+
+div.characterImage {
+    width: 102%;
+    border-radius: 52px;
+}
+
+div.characterText {
+    text-align: left;
+}
+
+.card-img-top {
+    border-radius: 30px 30px 30px 0;
+    border: 18px solid #646060;
+    position: relative;
+    opacity: 0.9;
+}
+
+.dropdown {
+    height: 30px;
+    margin: 10px;
+}
+
+#gameboyLogo {
+    height: 14px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gbButton {
+    background-color: rgb(129, 33, 138);
+    border: 20px;
+    border-radius: 40px;
+    width: 15%;
+    counter-reset: white;
+}
+
+.buttonA {
+    position: relative;
+    left: 65%;
+}
+
+.buttonB {
+    position: relative;
+    left: 85%;
+}
+
+.dPad {
+    width: 25%;
+    position: relative;
+    float: left;
+    top: -50px;
+}
