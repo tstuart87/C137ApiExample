@@ -14,7 +14,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 180%;
+    /* height: 180%; */
     border: 18px solid #646060;
     border-radius: 50px 50px 50px 0;
 }
@@ -36,12 +36,13 @@ div.characterText {
 }
 
 .dropdown {
-    height: 30px;
-    margin: 10px;
+    height: 40px;
+    margin: 20px;
+    font-size: larger;
 }
 
 #gameboyLogo {
-    height: 14px;
+    height: 18px;
     display: block;
     margin-left: auto;
     margin-right: auto;

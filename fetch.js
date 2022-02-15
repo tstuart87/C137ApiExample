@@ -34,15 +34,15 @@ function fetchCharacters() {
 };
 
 function displayName(json) {
-    characterNameHeader.innerText = json[1].name;
+    characterNameHeader.innerText = json[0].name;
 };
 
 function displaySpecies(json) {
-    characterNameSpecies.innerText = json[1].species;
+    characterNameSpecies.innerText = json[0].species;
 };
 
 function displayImage(json) {
-    let image = `<img src="${json[1].image}"></img>`;
+    let image = `<img src="${json[0].image}"></img>`;
     characterImage.innerHTML = image;
 };
 
