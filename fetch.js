@@ -13,6 +13,7 @@ const characterNameHeader = document.getElementById("character-name");
 const characterNameSpecies = document.getElementById("character-species");
 const characterImage = document.getElementById("character-image");
 const selectNameDropDown = document.getElementById("selector");
+const characterNameStatus = document.getElementById("character-status")
 
 fetchCharacters();
 
@@ -26,6 +27,7 @@ function fetchCharacters() {
             populateDropdown(json);
             displayName(json);
             displaySpecies(json);
+            displayStatus(json)
             displayImage(json);
         })
         .catch((error) =>
@@ -41,6 +43,10 @@ function displaySpecies(json) {
     characterNameSpecies.innerText = json[0].species;
 };
 
+function displayStatus(json) {
+    characterNameStatus.innerText = json[0].status;
+};
+
 function displayImage(json) {
     let image = `<img src="${json[0].image}"></img>`;
     characterImage.innerHTML = image;
@@ -54,6 +60,10 @@ function displayName(json, i) {
 
 function displaySpecies(json, i) {
     characterNameSpecies.innerText = json[i].species;
+};
+
+function displayStatus(json, i) {
+    characterNameStatus.innerText = json[i].status;
 };
 
 function displayImage(json, i) {
@@ -83,6 +93,7 @@ selectNameDropDown.addEventListener('change', function() {
             populateDropdown(json);
             displayName(json, this.value);
             displaySpecies(json, this.value);
+            displayStatus(json, this.value)
             displayImage(json, this.value);
         })
         .catch((error) =>
