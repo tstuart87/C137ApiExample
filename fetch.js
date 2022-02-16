@@ -40,11 +40,11 @@ function displayName(json) {
 };
 
 function displaySpecies(json) {
-    characterNameSpecies.innerText = json[0].species;
+    characterNameSpecies.innerText = "Species: " + json[0].species;
 };
 
 function displayStatus(json) {
-    characterNameStatus.innerText = json[0].status;
+    characterNameStatus.innerText = "Status: " + json[0].status;
 };
 
 function displayImage(json) {
@@ -59,11 +59,11 @@ function displayName(json, i) {
 };
 
 function displaySpecies(json, i) {
-    characterNameSpecies.innerText = json[i].species;
+    characterNameSpecies.innerText = "Species: " + json[i].species;
 };
 
 function displayStatus(json, i) {
-    characterNameStatus.innerText = json[i].status;
+    characterNameStatus.innerText = "Status: " + json[i].status;
 };
 
 function displayImage(json, i) {
