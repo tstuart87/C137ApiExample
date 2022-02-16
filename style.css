@@ -17,13 +17,12 @@ body {
     height: 180%;
     border: 18px solid #646060;
     border-radius: 50px 50px 50px 0;
-    -webkit-box-shadow: -2px -1px 15px 7px rgba(236, 18, 18, 0.5);
     -moz-box-shadow: -3px -2px 30px 14px rgba(71, 255, 80, 0.795);
     box-shadow: -4px -3px 45px 21px rgba(29, 255, 59, 0.281);
 }
 
 .card-body {
-    height: 40rem;
+    min-height: 44rem;
 }
 
 div.characterImage {

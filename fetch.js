@@ -88,13 +88,12 @@ selectNameDropDown.addEventListener('change', function() {
             return response.json();
         })
         .then((json) => {
-            this.value -= 1;
-            console.log(json, this.value);
+            console.log(json, this.value-1);
             populateDropdown(json);
-            displayName(json, this.value);
-            displaySpecies(json, this.value);
-            displayStatus(json, this.value)
-            displayImage(json, this.value);
+            displayName(json, this.value-1);
+            displaySpecies(json, this.value-1);
+            displayStatus(json, this.value-1)
+            displayImage(json, this.value-1);
         })
         .catch((error) =>
             console.log("Error.", error)
